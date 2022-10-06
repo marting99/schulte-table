@@ -16,7 +16,7 @@ export default function Table() {
     return (
         <Board>
             {numbers.map(number=>(
-                <Tile number={number}/>
+                <Tile number={number} key={number}/>
             ))}
         </Board>
     )
