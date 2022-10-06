@@ -30,7 +30,7 @@ export default function Tile({number}) {
     
     return (
         <TileBox onclick={onclick()}>
-            <div className='text'>
+            <div className='text' key={number}>
                 <p>{number}</p>
             </div>
         </TileBox>
