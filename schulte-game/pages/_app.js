@@ -1,7 +1,3 @@
-import { useEffect } from 'react';
-import dynamic from 'next/dynamic';
-function MyApp({ Component, pageProps }) {
+export default function ExtendedApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
-
-export default MyApp

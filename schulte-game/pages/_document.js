@@ -10,6 +10,7 @@ import Document, {
 import { ServerStyleSheet } from 'styled-components';
 
 
+
 export default class CustomDocument extends Document{
     static async getInitialProps(ctx){
         const sheet = new ServerStyleSheet();
@@ -42,9 +43,9 @@ export default class CustomDocument extends Document{
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
                 <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet"/>
-                <link rel="icon" href={"https://media.graphassets.com/VBD13HVTQ5eSgWiqrF60?_gl=1*a8q2yt*_ga*NDgzNTQ3OTQ3LjE2NTgxMDYwNjY.*_ga_G6FYGSYGZ4*MTY1ODEwNjA2NS4xLjEuMTY1ODEwNjE0My42MA.."} />
+                <link rel="icon" href={`https://i.ibb.co/vL8N9sZ/logo.png`} />
                 </Head>
-                <body style={{margin:'0', padding:'0'}}  >
+                <body style={{margin:'0', padding:'0', backgroundColor:'#0c4e56'}}  >
                     <Main />
                     <div id="modal-root"/>
                     <NextScript />
