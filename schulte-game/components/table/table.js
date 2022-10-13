@@ -61,6 +61,8 @@ export default function Table() {
     const numbersList = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25"];
     const [numbers,setNumbers] = useState([]);
     const [count,setCount] = useState(1);
+    // const [timeLeft,setTimeLeft] = useState('');
+    const timeLeft = useRef('');
 
     const [reset,setReset] = useState(false);
     const [start,setStart] = useState(false);
@@ -129,9 +131,11 @@ export default function Table() {
         setReset(false);
         if( start && (count>25)  && (timer != '00:00')){
             setWin(true);
+            timeLeft.current=timer;
             setReset(false);
             clearTimer();
         }
+        console.log(timeLeft)
       },[reset,count,timer,win]);
 
       useEffect(()=>{
@@ -152,6 +156,7 @@ export default function Table() {
             {win?(
                 <div>
                     <h1>Nice you did it!</h1>
+                    <h2 style={{textAlign:'center'}}>with {timeLeft.current.replace("00:",'')} seconds to spare</h2>
                 </div>
 
             ):lose?(
