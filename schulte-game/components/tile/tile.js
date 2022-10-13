@@ -20,6 +20,13 @@ transition: all .2s ease-in-out;
     box-shadow: 0px 0px 10px #a02515;
     transform: scale(1.02); 
 }
+@media screen and (max-width: 1024px){
+    width:66px;
+    height:67px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
 
 `
 

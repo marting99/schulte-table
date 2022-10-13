@@ -34,6 +34,20 @@ const Content = styled.div`
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    
+  }
+  @media screen and (max-width: 1024px){
+    .container{flex-direction:column-reverse;
+    align-items:center;
+    justify-content:center;
+    }
+    .left{
+      width:80%;
+      padding:20px;
+    }
+    .game h1{
+      font-size:43px;
+    }
   }
 `
 export default function Home() {

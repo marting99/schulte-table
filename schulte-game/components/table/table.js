@@ -14,6 +14,10 @@ const Board = styled.div`
     font-size:54px;
     
   }
+  @media screen and (max-width: 1024px){
+      width:355px;
+      height:375px;
+  }
   
 `
 const Content = styled.div`
